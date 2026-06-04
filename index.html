@@ -1252,9 +1252,7 @@ h1 em { font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; co
   animation: brandsMarquee 30s linear infinite;
   padding: 0.5rem 0 2.8rem 0;
 }
-.brands-marquee-track:hover {
-  animation-play-state: paused;
-}
+/* hover pause handled by JS */
 @keyframes brandsMarquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
@@ -2741,6 +2739,34 @@ body::after {
   overlay.addEventListener('click', closeMenu);
 
   window.closeMobileMenu = closeMenu;
+})();
+</script>
+
+
+<script>
+/* Brands marquee: tap pauses 1.2s then resumes */
+(function(){
+  var track = document.querySelector('.brands-marquee-track');
+  if (!track) return;
+  var timer = null;
+
+  function pauseBriefly() {
+    track.style.animationPlayState = 'paused';
+    clearTimeout(timer);
+    timer = setTimeout(function(){
+      track.style.animationPlayState = 'running';
+    }, 1200);
+  }
+
+  // Touch (mobile)
+  track.addEventListener('touchstart', function(e) {
+    pauseBriefly();
+  }, { passive: true });
+
+  // Click (desktop)
+  track.addEventListener('click', function(e) {
+    pauseBriefly();
+  });
 })();
 </script>
 
