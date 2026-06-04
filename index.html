@@ -1610,6 +1610,45 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
     width: 72px !important;
   }
 }
+/* ── MOBILE FIXES ─────────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Processus: números e títulos sempre verdes */
+  .step-num {
+    color: var(--acid) !important;
+  }
+  .step-content h3 {
+    color: var(--acid) !important;
+  }
+
+  /* Services: esconde showcase, cards legíveis */
+  .sc-showcase {
+    display: none !important;
+  }
+  .sc-tabs {
+    display: none !important;
+  }
+  .service-card {
+    background: #111 !important;
+    border: 1px solid rgba(200,245,60,0.12);
+    padding: 1.8rem 1.5rem !important;
+  }
+  .service-card h3 {
+    color: var(--white) !important;
+    font-size: 1.4rem;
+  }
+  .service-card p {
+    color: rgba(245,242,236,0.75) !important;
+    font-size: 0.85rem;
+  }
+  .service-num {
+    opacity: 1 !important;
+    color: var(--acid) !important;
+  }
+  .services-grid {
+    gap: 1rem;
+  }
+}
 
 </style>
 </head>
