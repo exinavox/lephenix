@@ -1268,7 +1268,7 @@ h1 em { font-family: 'Fraunces', serif; font-style: italic; font-weight: 300; co
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* SECTIONS */
-section.services { padding: 7rem 3.5rem; }
+section.services { padding: 7rem 3.5rem; scroll-margin-top: 90px; }
 section.process-section { padding: 7rem 3.5rem; }
 section.testimonials { padding: 7rem 3.5rem; background: var(--slate); }
 section.brands { padding: 4rem 3.5rem 5rem 3.5rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); overflow: visible; }
@@ -1432,7 +1432,9 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
   .hero-left { width: 100%; padding: 6rem 2rem 3rem; }
   .hero-right { width: 100%; min-height: 55vh; }
   section.services, section.process-section, section.testimonials { padding: 5rem 2rem; }
-  .section-header { grid-template-columns: 1fr; gap: 2rem; }
+  .section-header { grid-template-columns: 1fr; gap: 1rem; }
+  .section-desc { margin-bottom: 0.8rem; }
+  .section-header { margin-bottom: 2.5rem; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .port-item { grid-column: auto !important; grid-row: auto !important; height: 220px; }
   .process-grid { grid-template-columns: 1fr; gap: 4rem; }
@@ -1444,8 +1446,9 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
   footer { padding: 4.5rem 2rem 2rem; }
 }
 @media (max-width: 640px) {
-  .hero-left { padding: 5rem 1.5rem 2.5rem; }
+  .hero-left { padding: 2.5rem 1.5rem 2rem; }
   section.services, section.process-section, section.testimonials { padding: 4rem 1.5rem; }
+  .hero { padding-top: 65px; }
   .services-grid { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr; }
@@ -1601,11 +1604,11 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
 
   /* Reduz logo no mobile */
   .logo-visuell svg {
-    width: 48px !important;
-    height: 58px !important;
+    width: 62px !important;
+    height: 75px !important;
   }
   .logo-visuell > a > div > div:first-child {
-    width: 58px !important;
+    width: 72px !important;
   }
 }
 
