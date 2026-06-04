@@ -1649,6 +1649,56 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
     gap: 1rem;
   }
 }
+@media (max-width: 768px) {
+
+  /* Fundo preto sólido atrás do texto do showcase */
+  .sc-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,0.2) 30%,
+      rgba(0,0,0,0.92) 60%,
+      rgba(0,0,0,1) 100%
+    ) !important;
+  }
+
+  /* Texto sempre branco e legível */
+  .sc-info {
+    padding: 1.5rem 1.2rem 1.2rem;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.98));
+  }
+  .sc-info-title {
+    font-size: 1.8rem;
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  }
+  .sc-info-desc {
+    color: rgba(255,255,255,0.85) !important;
+    font-size: 0.7rem;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+  }
+  .sc-info-tag {
+    color: var(--acid) !important;
+  }
+
+  /* Tabs mais compactos e visíveis */
+  .sc-tabs {
+    display: flex !important;
+    gap: 0 !important;
+    border-bottom: 1px solid rgba(245,242,236,0.1);
+    overflow-x: auto;
+  }
+  .sc-tab {
+    font-size: 0.6rem !important;
+    padding: 0.7rem 0.8rem !important;
+    flex: 1;
+    justify-content: center;
+  }
+  .sc-tab .tab-label {
+    display: block !important;
+    font-size: 0.55rem;
+  }
+}
 
 </style>
 </head>
