@@ -1779,42 +1779,24 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
     margin-top: 1rem !important;
   }
   /* Reduzir padding top/bottom da seção inteira */
-  section.testimonials {
-    padding-top: 2rem !important;
-    padding-bottom: 2.5rem !important;
-  }
-  /* Reduzir padding bottom do processus para juntar as seções */
-  section.process-section {
-    padding-bottom: 2rem !important;
-  }
+
 }
 
 @media (max-width: 768px) {
-  .section-header,
-  .testimonials .section-header,
-  .services .section-header,
-  .process-section .section-header {
+  /* Espaçamento uniforme entre e dentro de todas as seções */
+  section.services,
+  section.process-section,
+  section.testimonials {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  .section-header {
     margin-bottom: 2.5rem !important;
     gap: 1rem !important;
   }
-  .section-desc,
-  .testimonials .section-desc {
+  .section-desc {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
-  }
-  .testimonials-grid,
-  .process-grid,
-  .services-grid {
-    margin-top: 0 !important;
-  }
-}
-@media (max-width: 768px) {
-  /* Espaço entre último card de serviços e início do Processus igual ao espaço interno */
-  section.services {
-    padding-bottom: 2.5rem !important;
-  }
-  section.process-section {
-    padding-top: 2.5rem !important;
   }
 }
 
