@@ -1749,19 +1749,16 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
   }
 
   /* Remover efeito de clique/hover nos process-step */
+  .process-step,
   .process-step:hover,
   .process-step:active,
   .process-step:focus {
+    padding-left: 0 !important;
     transform: none !important;
     box-shadow: none !important;
     background: transparent !important;
-    border-color: transparent !important;
-  }
-  .process-step:hover .step-num,
-  .process-step:active .step-num {
-    color: var(--acid) !important;
-  }
-  .process-step {
+    border-color: var(--border) !important;
+    transition: none !important;
     -webkit-tap-highlight-color: transparent;
     cursor: default;
   }
