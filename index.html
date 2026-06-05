@@ -1765,10 +1765,24 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
 }
 @media (max-width: 768px) {
   .testimonials .section-header {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+    gap: 0.5rem !important;
   }
   .testimonials .section-desc {
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .testimonials-grid {
+    margin-top: 1rem !important;
+  }
+  /* Reduzir padding top/bottom da seção inteira */
+  section.testimonials {
+    padding-top: 2rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  /* Reduzir padding bottom do processus para juntar as seções */
+  section.process-section {
+    padding-bottom: 2rem !important;
   }
 }
 
