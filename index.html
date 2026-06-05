@@ -1785,6 +1785,26 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
     padding-bottom: 2rem !important;
   }
 }
+@media (max-width: 768px) {
+  /* Espaço uniforme entre section-desc e primeiro card em todas as seções */
+  .section-header {
+    margin-bottom: 2.5rem !important;
+    gap: 1rem !important;
+  }
+  .section-desc {
+    margin-bottom: 0 !important;
+  }
+  /* Testimonials: mesmo espaço */
+  .testimonials .section-header {
+    margin-bottom: 2.5rem !important;
+  }
+  .testimonials .section-desc {
+    margin-bottom: 0 !important;
+  }
+  .testimonials-grid {
+    margin-top: 0 !important;
+  }
+}
 
 </style>
 </head>
