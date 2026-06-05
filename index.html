@@ -1799,6 +1799,43 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
     padding-bottom: 0 !important;
   }
 }
+@media (max-width: 768px) {
+  /* Remove espaço vazio do showcase de serviços */
+  .sc-showcase,
+  .sc-tabs {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .services-showcase,
+  .service-showcase {
+    display: none !important;
+    height: 0 !important;
+  }
+  /* Remove espaço vazio do visual do processus */
+  .process-visual {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+  }
+  .process-grid {
+    gap: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  section.services > div:not(.section-header):not(.services-grid) {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  section.services .services-grid {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  section.process-section {
+    margin-top: 0 !important;
+  }
+}
 
 </style>
 </head>
