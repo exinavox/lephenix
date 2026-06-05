@@ -1431,9 +1431,8 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
   .hero-left { width: 100%; padding: 6rem 2rem 3rem; }
   .hero-right { width: 100%; min-height: 55vh; }
   section.services, section.process-section, section.testimonials { padding: 5rem 2rem; }
-  .section-header { grid-template-columns: 1fr; gap: 1rem; }
-  .section-desc { margin-bottom: 0.8rem; }
-  .section-header { margin-bottom: 2.5rem; }
+  .section-header { grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2.5rem; }
+  .section-desc { margin-bottom: 0; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .port-item { grid-column: auto !important; grid-row: auto !important; height: 220px; }
   .process-grid { grid-template-columns: 1fr; gap: 4rem; }
@@ -1785,23 +1784,23 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
     padding-bottom: 2rem !important;
   }
 }
+
 @media (max-width: 768px) {
-  /* Espaço uniforme entre section-desc e primeiro card em todas as seções */
-  .section-header {
+  .section-header,
+  .testimonials .section-header,
+  .services .section-header,
+  .process-section .section-header {
     margin-bottom: 2.5rem !important;
     gap: 1rem !important;
   }
-  .section-desc {
-    margin-bottom: 0 !important;
-  }
-  /* Testimonials: mesmo espaço */
-  .testimonials .section-header {
-    margin-bottom: 2.5rem !important;
-  }
+  .section-desc,
   .testimonials .section-desc {
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
-  .testimonials-grid {
+  .testimonials-grid,
+  .process-grid,
+  .services-grid {
     margin-top: 0 !important;
   }
 }
