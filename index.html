@@ -1730,6 +1730,40 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
     box-shadow: none !important;
   }
 }
+@media (max-width: 768px) {
+
+  /* Justificar todos os textos descritivos */
+  .section-desc,
+  .sc-info-desc,
+  .service-card p,
+  .step-content p,
+  .contact-sub,
+  .hero-desc,
+  .hero-sub,
+  .testimonial-text {
+    text-align: justify !important;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  /* Remover efeito de clique/hover nos process-step */
+  .process-step:hover,
+  .process-step:active,
+  .process-step:focus {
+    transform: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    border-color: transparent !important;
+  }
+  .process-step:hover .step-num,
+  .process-step:active .step-num {
+    color: var(--acid) !important;
+  }
+  .process-step {
+    -webkit-tap-highlight-color: transparent;
+    cursor: default;
+  }
+}
 
 </style>
 </head>
@@ -1983,7 +2017,7 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
           <div class="sc-info">
             <div class="sc-info-tag">Identité Visuele</div>
             <div class="sc-info-title">Création de Logotypes</div>
-            <div class="sc-info-desc">Logos uniques et mémorables qui incarnent l'âme de votre marque — modernes et intemporels.</div>
+            <div class="sc-info-desc">Logos uniques et mémorables qui incarnent l'âme de votre marque, modernes et intemporels.</div>
           </div>
         </div>
 
