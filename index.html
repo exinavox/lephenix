@@ -1699,6 +1699,37 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
     font-size: 0.55rem;
   }
 }
+@media (max-width: 768px) {
+  /* Remove todos os efeitos de clique/hover nos cards no mobile */
+  .service-card:hover,
+  .service-card:active,
+  .service-card:focus {
+    background: #111 !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  .service-card:hover::before,
+  .service-card:active::before {
+    transform: scaleX(0) !important;
+  }
+  .service-card:hover .service-arrow,
+  .service-card:active .service-arrow {
+    opacity: 0 !important;
+    transform: translateY(8px) !important;
+  }
+  .service-card {
+    -webkit-tap-highlight-color: transparent;
+    cursor: default;
+  }
+  /* Remove hover nas cards de portfolio */
+  .biz-card-front:hover,
+  .biz-card-back:hover,
+  .flyer-card:hover,
+  .lcard:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
 
 </style>
 </head>
