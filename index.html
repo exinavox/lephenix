@@ -1742,8 +1742,10 @@ footer { background: var(--slate); padding: 5.5rem 3.5rem 2.5rem; }
   .hero-sub,
   .testimonial-text {
     text-align: justify !important;
-    hyphens: auto;
-    -webkit-hyphens: auto;
+    hyphens: none;
+    -webkit-hyphens: none;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
 
   /* Remover efeito de clique/hover nos process-step */
